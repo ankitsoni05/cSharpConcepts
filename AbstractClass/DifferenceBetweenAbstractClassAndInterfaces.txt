@@ -1,0 +1,6 @@
+﻿1. An abstract class can have implementation for some of it's members, but interfaces cannot have implementation for any of it's members.
+2. Interfaces cannot have field, whereas an abstract class can have fields.
+3. An interface can inherits from another interface only and cannot inherit from abstract class, whereas an abstract class can inherit from another 
+   abstract class or interface.
+4. A class can inherit from multiple interfaces at the same time, but a class cannot inherits from multiple classes at the same time.
+5. Abstract class members can have access modifiers whereas an interface members cannot have access modifiers.

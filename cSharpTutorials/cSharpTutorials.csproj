@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F714BBBF-D7BB-45C4-9F10-2F675755C09E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>cSharpTutorials</RootNamespace>
+    <AssemblyName>cSharpTutorials</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractClass\AbstractClass.csproj">
+      <Project>{e6a44967-e22b-4288-82d8-953a0575b74f}</Project>
+      <Name>AbstractClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Delegates\Delegates.csproj">
+      <Project>{7235312b-34b4-4b87-bf0c-4fee2359dae1}</Project>
+      <Name>Delegates</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Encapsulation\Encapsulation.csproj">
+      <Project>{e0ad73b4-78ed-42b5-add8-2fbc96b3a669}</Project>
+      <Name>Encapsulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExceptionHandling\ExceptionHandling.csproj">
+      <Project>{0d864ae7-9fd7-4020-aaa1-01107a11181e}</Project>
+      <Name>ExceptionHandling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InheritanceExample\InheritanceExample.csproj">
+      <Project>{c2bdedcd-c697-419e-ba16-59ee9ecd63a7}</Project>
+      <Name>InheritanceExample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{fd071957-5d46-4898-9a87-0f93b5cea819}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MethodOverloadingVSMethodHiding\MethodOverloadingVSMethodHiding.csproj">
+      <Project>{e3ae0964-d0d1-4d7f-8194-48d7c226acd6}</Project>
+      <Name>MethodOverloadingVSMethodHiding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MultipleClassInheritanceUsingInterfaces\MultipleClassInheritanceUsingInterfaces.csproj">
+      <Project>{4b10d6c9-c307-48df-9cf1-931f8c87794a}</Project>
+      <Name>MultipleClassInheritanceUsingInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Polymorphism\Polymorphism.csproj">
+      <Project>{169da60d-a132-4938-8855-3ca93b3c830f}</Project>
+      <Name>Polymorphism</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectA.TeamA\ProjectA.TeamA.csproj">
+      <Project>{b0bcab51-0b07-4ddd-9c1e-0b98fa08c8ac}</Project>
+      <Name>ProjectA.TeamA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectA.TeamB\ProjectA.TeamB.csproj">
+      <Project>{5f7245d1-f241-41a6-b39c-1429cb221f08}</Project>
+      <Name>ProjectA.TeamB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Structures\Structures.csproj">
+      <Project>{5aee1ad0-1ae8-40a7-b87c-ae9eeac72163}</Project>
+      <Name>Structures</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
