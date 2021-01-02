@@ -1,0 +1,2 @@
+DivideByZeroException
+   at ExceptionHandling.InnerException.Divide() in C:\Users\Ankit\Source\Repos\NewRepo\cSharpTutorials\ExceptionHandling\InnerException.cs:line 22

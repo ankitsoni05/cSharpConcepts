@@ -47,8 +47,12 @@ namespace cSharpTutorials
 
         static void Main(string[] args)
         {
+            #region Inner Exception
+            EH.InnerException.Divide();
+            #endregion
+
             #region Exception Handling
-            EH.ExceptionHandling.printFileContents();
+            //EH.ExceptionHandling.printFileContents();
             #endregion
 
             #region Delegate example 3 Delegates
